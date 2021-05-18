@@ -1,0 +1,113 @@
+.u-body {
+    color: #111111;
+    background-color: #ffffff;
+    font-family: 'Open Sans',sans-serif;
+    background-image: url(images/171550837_4090032247685724_1552338599415350609_n.jpg);
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; 
+    background-image: none;
+    height: 70px;
+    background: transparent;
+    }
+
+.caixinhas {
+    box-sizing: border-box;
+}
+
+.caixa {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.espacodiv {
+    content: '';
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    margin-left: 10%;
+    display: block;
+    max-width: 97px;
+    max-height: 97px;
+}
+
+.btn_cabecalho {
+    border-style: solid;
+    border: 0 none transparent;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    /* tentativa de risco embaixo */
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    
+}
+
+.nav {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.divsocial {
+    white-space: nowrap;
+    height: 26px;
+    min-height: 16px;
+    width: 98px;
+    min-width: 68px;
+}
+.iconesocial {
+    height: 100%;
+    display: inline-block;
+    flex: 1;
+}
+
+.social-url {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    border: 0 none transparent;
+    outline-width: 0;
+    background-color: transparent;
+    margin: 0;
+    -webkit-text-decoration-skip: objects;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.txt-principal {
+    font-family: Lato, sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 8rem;
+    margin: 70px 101px 0;
+    line-height: 1.1;
+    padding: 0;
+    text-align: center;
+}
