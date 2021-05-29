@@ -1,10 +1,11 @@
 .u-body {
     color: #111111;
-    background-color: #ffffff;
+    background-color: gray;
     font-family: 'Open Sans',sans-serif;
     margin: 0;
     border: 0;
     padding: 0;
+    max-width: 100%;
 }
 .container {
     display: flex;  /* alinha um do lado do outro */
@@ -209,6 +210,9 @@ a {
     padding-right: 30px;
 }
 
+.pesquisa-section1 {
+    
+}
 /* 2ª sessão do site */
 
 .layout-section2 {
@@ -219,10 +223,12 @@ a {
     border-style: groove;
     border-color: silver;
     display: flex;
-
+    border-right: none;
+    border-left: none;
 }
 
 .img-section2{
+    display: block;
     border-style: groove;
     border-top: none;
     border-color: silver;
@@ -288,9 +294,63 @@ a {
     background-image: url(images/vermelha.jpg);
 }
 
+.video-section3{
+    padding-bottom: 30px;
+}
 
+tbody {
+    color: white;
+    font-size: 1.25rem;
+    padding-right: 40px;
+}
 
+.layout-section4 {
+    background-image: linear-gradient(rgb(3, 3, 80), rgb(34, 34, 133), rgb(134, 134, 226));
+    pointer-events: initial;
+    width: 100%; 
+    height: 538px;
+    border-style: groove;
+    border-color: silver;
+    display: flex;
+    padding-top: 70px;
+    border-right: none;
+    border-left: none;
 
+}
+
+.layout-section4 h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 2.25rem;
+    position: relative;
+    margin: 0 auto;
+    padding-right: 25px;
+}
+
+.designtecnico {
+    /* border-collapse: separate;
+    text-indent: initial;
+    white-space: pre; */
+    font-size: initial;
+    font-family: monospace;
+    tab-size: 4;
+    border-spacing: 3px;
+    padding-right: 25px;
+}
+
+.rodape {
+    bottom: 0;
+    background-color: white;
+    color: rgb(12, 12, 12);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.rodape img {
+    height: 130px;
+}
 /* Parte de anúncios 
 
 .figure {
