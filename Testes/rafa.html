@@ -81,11 +81,7 @@
                 substituir o Fiat Tempra!</p>    
             </div>
         </div>
-        <a>
-            <audio controls>
-                <source  src="video/puro-ronco.mp3" type="audio/mpeg">
-            </audio>
-        </a>
+
     </div>
 
 </section>
@@ -93,7 +89,8 @@
 <section>
     <div class="layout-section2">
         <div class="txt-section2">
-            <h2>Por que tão especial?</h2> <br>
+            <h2>Por que tão especial?</h2>
+            <h4>Ouça clicando na imagem ao lado →</h4>
             <p>Além da turbina, o motor recebia coletor de admissão especial, bielas e pistões 
                 redimensionados e válvulas de escape refrigeradas a sódio. Havia também radiador 
                 de óleo e intercooler, este último de suma importância para os altos números de 
@@ -103,8 +100,7 @@
                     <button class="btn-section2">LER MAIS SOBRE O MOTOR!</button>
                 </a>
         </div>
-            
-            <img class="img-section2" src="images/FiatBravamuitolindo_.png" alt="Fiat Brava HGT Custom" >
+            <img onclick="play()" class="img-section2" src="images/FiatBravamuitolindo_.png" alt="Fiat Brava HGT Custom" >
     </div>
 </section>
 
@@ -113,10 +109,10 @@
     <div class="layout-section3">
 
 
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/-1LSzuom5u0" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-1LSzuom5u0" 
+        title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+    </div>
 </section>
 
 <section class="layout-section4">
@@ -198,10 +194,38 @@
 </section>
 
     <footer class="rodape">
-        <img src="images/logo2.jpg"><h3>MAREACLUB @ Todos direitos reservados. 2021</h3>
+        <img class="logo-rodape" src="images/logo2.jpg">
+        <div class="divsocial-footer">
+            <!-- Facebook -->
+            <a class="social-url-" title="Facebook" target="_blank" 
+            href="https://www.facebook.com/FamiliaCDM10">
+                <span class="iconesocial"><img src="images/face.png" alt="ícone do Facebook"></span>
+            </a>
+            <!-- Instagram -->
+            <a class="social-url" title="Instagram" target="_blank" 
+            href="https://www.instagram.com/rafaell_barretto/">
+            <span class="iconesocial"><img class="img2" src="images/insta.png" 
+                alt="ícone do Instagram"></span>
+            </a>
+        </div>
+        <h2>MAREACLUB @ Todos direitos reservados.
+        </h2>
     </footer>
 </body>
 </html>
+
+<script>
+    
+    function play() {
+        var contador = 0;
+        var audio = new Audio('video/puro-ronco.mp3');
+        contador++;    
+        audio.play();
+            if(contador == 1 && 3){
+                audio.stop();    }   
+      }
+</script>
+
 <!-- 
 <p>Escolha seu modelo favorito:</p>
             <div class="pesquisa-section1">    

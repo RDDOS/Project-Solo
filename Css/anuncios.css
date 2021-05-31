@@ -1,0 +1,333 @@
+body {
+    background-image: url("./images/topgraphy.svg"), url(images/carbon-blue.jpg),
+      linear-gradient(110deg, black, white);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    /* background: white; */
+    background-attachment: fixed;
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    max-width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  
+
+  .item {
+    width: 450px;
+    height: 450px;
+      margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    font-size: 35px;
+    background-color: var(--yellow); 
+  }
+  
+  .item2 {
+    width: 630px;
+    height: 270px;
+      margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    font-size: 35px;
+    background-color: #373737; 
+  }
+
+  .item p {
+    margin: 0 0 5px 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 470px  580px;
+    grid-gap: 30px;
+    margin-left: 130px;
+  }
+
+  .container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-size: cover;
+  }
+
+  .u-body {
+    color: #111111;
+    background-color: gray;
+    font-family: 'Open Sans',sans-serif;
+
+}
+
+
+.cabecalho {
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    left: 0; 
+    background-image: none;
+    width: 1060; 
+    height: 101;
+    background: transparent;
+    }
+
+.caixa {
+    margin: 0 auto;
+    /* box-sizing: border-box; */
+    width: 1140px; 
+    height: 101px;
+}
+
+.espacodiv {
+    content: '';
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    background-attachment: local;
+    max-width: 97px;
+    max-height: 97px;
+}
+
+.cabecalho ul {
+    list-style: none;
+}
+
+.btn_cabecalho {
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: black !important;
+}
+
+.cabecalho ul li:hover {
+    color: rgb(255, 0, 0) !important;
+    border-bottom: solid 2px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav {
+    margin-bottom: -14px;
+    float: right;
+    padding-top: 55px;
+    display: flex;
+
+}
+
+.divsocial {
+    padding-top: 21px;
+    float: right;
+    height: 26px;
+    width: 68px;
+}
+
+.divsocial .img2 {
+    margin-left: 10px;
+}
+
+.iconesocial {
+    height: 100%;
+    display: inline-block;
+    flex: 1;
+}
+
+.social-url {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    border: 0 none transparent;
+    outline-width: 0;
+    background-color: transparent;
+    margin: 0;
+    -webkit-text-decoration-skip: objects;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.text-banner{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.txt-h1 {
+    font-family: Lato, sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 8rem;
+    margin: 0px 180px;
+    line-height: 1.1;
+    padding: 0;
+    text-align: center;
+}
+
+.txt-h4 {
+    margin: 0 auto 60px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+
+
+
+/* SLIDESHOW */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.jsd-message-content {
+  margin-bottom: 30px;
+}
+
+.jsd-unsubscribe-link, .jsd-issue-link {
+  color: #3572b0;
+  text-decoration: none;
+}
+
+.jsd-link-separator {
+  padding: 0 10px;
+}
+
+.jsd-request-sharedwith {
+  color: #707070;
+  font-size: 12px;
+}
+
+.jsd-servicedesk-link {
+  color: #707070;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* Aplicado ao marcador removedor de resposta quando o recebimento de e-mail está habilitado. */
+.jsd-reply-marker {
+  color: #999999;
+}
+
+.jsd-reply-marker-hint {
+  color: #999999;
+  margin-bottom: 30px;
+}
+
+.jsd-activity-item-separator {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}

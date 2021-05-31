@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="Pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <link rel="shortcut icon" href="images/logo2.ico" type="image/x-icon" />
+    <title>MAREACLUB!</title>
+</head>
+
+<body class="u-body">
+    <section>
+        <div class="fundoindex">
+            <div class="cabecalho">
+
+                <div class="caixa">
+
+                    <!-- logo -->
+                    <a href="index.html" class="logo">
+                        <img src="images/logo2.jpg" class="logo">
+                    </a>
+
+                    <!-- Barra de navegação, botões do menu -->
+                    <nav class="nav">
+                        <ul>
+                            <a href="">
+                                <li class="btn_cabecalho">INÍCIO</li>
+
+                            </a>
+
+                            <a href="">
+                                <li class="btn_cabecalho">ANÚNCIOS</li>
+                            </a>
+                            <a href="">
+                                <li class="btn_cabecalho">SUPORTE</li>
+                            </a>
+
+                        </ul>
+
+                        <!-- Botões Sociais -->
+
+                        <div class="divsocial">
+
+                            <!-- Facebook -->
+
+                            <a class="social-url" title="Facebook" target="_blank"
+                                href="https://www.facebook.com/FamiliaCDM10">
+                                <span class="iconesocial"><img src="images/face.png" alt="ícone do Facebook"></span>
+                            </a>
+
+                            <!-- Instagram -->
+
+                            <a class="social-url" title="Instagram" target="_blank"
+                                href="https://www.instagram.com/rafaell_barretto/">
+                                <span class="iconesocial"><img class="img2" src="images/insta.png"
+                                        alt="ícone do Instagram"></span>
+                            </a>
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+
+            <!-- Títulos index -->
+
+            <div class="text-banner">
+                <h1 class="txt-h1">MAREACLUB</h1>
+                <h4 class="txt-h4">ESPAÇO DESTINADO Á SUPREMACIA FIAT NO BRASIL</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+        <!-- Primeira section da pág, com gradient -->
+
+        <div class="gradient-section1">
+            <div class="layout-section1">
+
+                    <!-- Carroussel do Marea -->
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="SLIDESHOW/frente.png">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="SLIDESHOW/marea-side.png">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="SLIDESHOW/tras.png">
+                    </div>
+
+                    <!-- Botões de Anterior e Próxio -->
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- Botões/círculos -->
+
+                <div>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <!-- Div de texto, lado direito -->
+
+                <div class="txt-section1">
+                    <h2>O mais potente nacional de sua época, combinava a fúria de um motor turbo
+                        com a classe de um sedã italiano</h2> 
+
+                        <p>Lançado na Itália, em 1996.<br>Chegando ao Brasil em 1998 para
+                        substituir o Fiat Tempra!</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+
+    </section>
+
+     <!-- Segunda section da pág, com moldura destacada -->
+
+    <section>
+        <div class="layout-section2">
+            <div class="txt-section2">
+
+                <h2>Por que tão especial?</h2>
+                <h4>Ouça clicando na imagem ao lado →</h4>
+                    <p>Além da turbina, o motor recebia coletor de admissão especial, bielas e pistões
+                        redimensionados e válvulas de escape refrigeradas a sódio. Havia também radiador
+                        de óleo e intercooler, este último de suma importância para os altos números de
+                        torque e potência: 27 kgfm a 2.750 rpm e 182 cv a 6.000 rpm.</p>
+                
+                        <!-- Btn com link externo para detalhes técnicos -->
+
+                <a href="https://www.carrosnaweb.com.br/fichadetalhe.asp?codigo=88" target='_blank'>
+                <button class="btn-section2">LER MAIS SOBRE O MOTOR!</button>
+                </a>
+
+            </div>
+
+            <!-- Imagem com mp3 ativável por click -->
+
+            <img onclick="play()" class="img-section2" src="images/FiatBravamuitolindo_.png"
+                alt="Fiat Brava HGT Custom">
+        </div>
+    </section>
+
+     <!-- Terceira section da pág, vídeo tributo -->
+
+    <section>
+
+        <!-- Marea vermelho com vídeo -->
+
+        <div class="layout-section3">
+
+            <iframe style="margin-top: 110px;" width="760" height="420" src="https://www.youtube.com/embed/-1LSzuom5u0"
+                title="YouTube video player" frameborder="3" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+
+        </div>
+    </section>
+
+    <!-- "IDEA" Notícias do Fiat Marea -->
+    <!-- 
+<section>
+
+    <div class="gradient-section-noticias">
+
+        <div class="layout-section-noticias">
+
+                <a href="https://quatrorodas.abril.com.br/testes/comparativo-quando-o-fiat-marea-turbo-enfrentou-o-vw-golf-gti-e-venceu/">
+                <h2>Comparativo: quando o Fiat Marea Turbo enfrentou o VW Golf GTI – e venceu</h2>
+                    <p>Os turbinados nacionais mais cobiçados do início dos anos 2000 se enfrentaram numa disputa de levantar poeira</p> 
+                <img src="images/mareaxgolf.jpg" alt="Marea Versus Golf">
+                </a>
+
+        </div>
+
+    </div>
+
+</section> -->
+
+    <!-- Quarta section da pág, detalhes técnicos -->
+
+    <section class="layout-section4">
+
+        <caption>
+            <h2>Ficha técnica:</h2>
+        </caption>
+
+        <table class="designtecnico">
+            <tbody>
+                <tr>
+                    <th>Motor</th>
+                    <td>5 cilindros, 20V, duplo comando, injeção multiponto sequencial, turbo</td>
+                </tr>
+                <tr>
+                    <th>Cilindrada</th>
+                    <td>1997 cm3</td>
+                </tr>
+                <tr>
+                    <th>Diâmetro x curso</th>
+                    <td>82×75,6mm</td>
+                </tr>
+                <tr>
+                    <th>Taxa de compressão</th>
+                    <td>8,5:1</td>
+                </tr>
+                <tr>
+                    <th>Potência</th>
+                    <td>182 cv a 6000 rpm</td>
+                </tr>
+                <tr>
+                    <th>Torque</th>
+                    <td>27 mkgf a 2750 rpm</td>
+                </tr>
+                <tr>
+                    <th>Câmbio</th>
+                    <td>manual de 5 marchas, tração dianteira</td>
+                </tr>
+                <tr>
+                    <th>Dimensões</th>
+                    <td>comprimento, 4.39m; largura, 254 cm; entre-eixos, 254 cm</td>
+                </tr>
+                <tr>
+                    <th>Peso</th>
+                    <td>1310 kg</td>
+                </tr>
+                <tr>
+                    <th>Porta-malas/caçamba</th>
+                    <td>430 litros</td>
+                </tr>
+                <tr>
+                    <th>Tanque</th>
+                    <td>63 litros</td>
+                </tr>
+                <tr>
+                    <th>Suspensão dianteira</th>
+                    <td>independente, McPherson</td>
+                </tr>
+                <tr>
+                    <th>Suspensão traseira</th>
+                    <td>braços oscilantes longitudinais</td>
+                </tr>
+                <tr>
+                    <th>Freios</th>
+                    <td>disco ventilado na frente e sólido atrás, com ABS</td>
+                </tr>
+                <tr>
+                    <th>Pneus</th>
+                    <td>195/60 R15</td>
+                </tr>
+                <tr>
+                    <th>Preço (Maio, 2021)</th>
+                    <td>R$ 22.263,00</td>
+                </tr>
+                <tr>
+                    <th>Preço (atualizado IPC-A / IBGE)</th>
+                    <td>R$ 121.111</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="rodape">
+        <img class="logo-rodape" src="images/logo2.jpg">
+
+        <button class="btn-final">CONFIRA NOSSOS ANÚNCIOS!</button>
+
+        <div class="divsocial-footer">
+            <!-- Facebook -->
+            <a class="social-url-" title="Facebook" target="_blank" href="https://www.facebook.com/FamiliaCDM10">
+                <span class="iconesocial"><img src="images/face.png" alt="ícone do Facebook"></span>
+            </a>
+            <!-- Instagram -->
+            <a class="social-url" title="Instagram" target="_blank" href="https://www.instagram.com/rafaell_barretto/">
+                <span class="iconesocial"><img class="img2" src="images/insta.png" alt="ícone do Instagram"></span>
+            </a>
+        </div>
+        <h2>MAREACLUB @ Todos direitos reservados.
+        </h2>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    var audio = new Audio('video/puro-ronco.mp3');
+
+    function play() {
+        audio.play();
+        if (audio.paused == true) {
+            audio.play();
+        }
+    }
+
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
