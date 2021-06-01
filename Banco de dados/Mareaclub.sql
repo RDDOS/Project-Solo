@@ -3,9 +3,9 @@ Use MAREACLUB;
 
 create table Usuario(
 	IdUsuario int primary key auto_increment,
-    Nome VARCHAR(45),
-    Email VARCHAR(45),
-    Senha VARCHAR(14)
+    nome VARCHAR(45),
+    login VARCHAR(45),
+    senha VARCHAR(14)
 		) auto_increment = 100;
         
 create table Carros_galeria(
@@ -88,4 +88,5 @@ from Usuarios_e_galeria
 JOIN Usuario on Usuario.IdUsuario = Usuarios_e_galeria.IdUsuario_galeria
 Join Carros_galeria on Usuarios_e_galeria.IdCarro_galeria = Carros_galeria.IdCarro_galeria;
 
-select Usuario.Nome, Usuario.Modelo
+select Usuario.Nome, Usuario.Modelo;
+Drop table Usuario;

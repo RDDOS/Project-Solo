@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" type="text/css" href="../Css/Login.css">
+    <link rel="shortcut icon" href="../images/logo2.ico" type="image/x-icon" />
+    <script src="funcoes.js"></script>
+
+    <title>ÁREA DE LOGIN</title>
+</head>
+<body>
+    <body class="u-body">
+        <section>
+            <div class="fundoindex">
+                <div class="cabecalho">
+    
+                    <div class="caixa">
+    
+                        <!-- logo -->
+                        <a href="index.html" class="logo">
+                            <img src="../images/logo2.jpg" class="logo">
+                        </a>
+    
+                        <!-- Barra de navegação, botões do menu -->
+                        <nav class="nav">
+                            <ul>
+                                <a href="index.html">
+                                    <li class="btn_cabecalho">INÍCIO</li>
+    
+                                </a>
+    
+                                <a href="Anuncios.html">
+                                    <li class="btn_cabecalho">ANÚNCIOS</li>
+                                </a>
+                                <a href="login.html">
+                                    <li class="btn_cabecalho">LOGIN</li>
+                                </a>
+    
+                            </ul>
+    
+                            <!-- Botões Sociais -->
+    
+                            <div class="divsocial">
+    
+                                <!-- Facebook -->
+    
+                                <a class="social-url" title="Facebook" target="_blank"
+                                    href="https://www.facebook.com/FamiliaCDM10">
+                                    <span class="iconesocial"><img src="../images/face.png" alt="ícone do Facebook"></span>
+                                </a>
+    
+                                <!-- Instagram -->
+    
+                                <a class="social-url" title="Instagram" target="_blank"
+                                    href="https://www.instagram.com/rafaell_barretto/">
+                                    <span class="iconesocial"><img class="img2" src="../images/insta.png"
+                                            alt="ícone do Instagram"></span>
+                                </a>
+                            </div>
+                        </nav>
+    
+    
+                    </div>
+                </div>
+    
+                <!-- Títulos index -->
+    
+                <!-- <div class="text-banner">
+                    <h1 class="txt-h1">MAREACLUB</h1>
+                    <h4 class="txt-h4">ESPAÇO DESTINADO Á SUPREMACIA FIAT NO BRASIL</h4>
+                </div> -->
+
+                <div class="container" >
+                    
+                    <a class="links" id="paralogin"></a>
+                    <a class="links" id="paracadastro"></a> 
+
+                    <div class="content">      
+                      <!--FORMULÁRIO DE LOGIN-->
+                      <div id="login">
+                        <form id="form_login" method="post" onsubmit="return entrar()"> 
+                          <h1 class="h1-login">LOGIN</h1> 
+                          <p> 
+                            <label for="nome_login">Seu E-mail</label>
+                            <input name="login" required="required" type="text" placeholder="ex. contato@bandtec.com"/>
+                          </p>
+                           
+                          <p> 
+                            <label for="email_login">Senha</label>
+                            <input name="senha" required="required" type="password" placeholder="ex. senha" /> 
+                          </p>
+                           
+                          <p> 
+                            <input type="submit" id="btn_entrar" /> 
+                          </p>
+                           
+                          <p class="link">
+                            Ainda não tem conta?
+                            <a href="#paracadastro">Cadastre-se</a>
+                          </p>
+                        </form>
+                      </div>
+                 
+                      <!--FORMULÁRIO DE CADASTRO-->
+                      <div id="cadastro">
+                        <form method="post" id="form_cadastro" onsubmit="return cadastrar()" name="form"> 
+                          <h1 class="h1-login">CADASTRO</h1> 
+                           
+                          <p> 
+                            <label for="nome_cad">Seu nome</label>
+                            <input name="nome" required minlength="4" type="text" placeholder="Digite o seu nome" />
+                          </p>
+                           
+                          <p> 
+                            <label for="email_cad">Seu e-mail</label>
+                            <input name="login" required minlength="4" type="text" placeholder="contato@mareaclub.com"/> 
+                          </p>
+                           
+                          <p> 
+                            <label for="senha_cad">Sua senha</label>
+                            <input name="senha" required minlength="4" type="password" placeholder="ex. 1234"/>
+                          </p>
+                           
+                          <p> 
+                            <input type="submit" id="btn_entrar" value="Cadastrar"/> 
+                          </p>
+                           
+                          <p class="link">  
+                            Já tem conta?
+                            <a href="#paralogin"> Ir para Login </a>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  </div>  
+            </div>
+        </section>
+    
+    
+        <section>
+
+            <script data-jsd-embedded data-key="1f132da2-ad57-47a4-a746-82666097bf3d" 
+data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+</body>
+</html>
+<script>
+  
+  function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                alert ('Cadastro realizado com sucesso!');
+                window.location.href='#paralogin';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+    /* */
+    function aguardar() {
+        btn_entrar.disabled = true;
+        // img_aguarde.style.display='block';
+        // div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        // img_aguarde.style.display='none';
+        // div_erro.style.display='block';
+    }
+
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'index.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        // img_aguarde.style.visibility = 'visible';
+        // div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        // img_aguarde.style.visibility = 'hidden';
+        // div_erro.style.visibility = 'visible';
+        // div_erro.innerHTML = resposta;
+    }
+</script>
