@@ -46,13 +46,6 @@ select * from Anuncios;
 select * from Compra_anuncio;
 select * from Usuarios_e_galeria;
 
-
-Insert into Usuario (Nome, Endereco, Email)
-	values 	('Rafael Albuquerque', 'Rua Ibitira', 'rafael@bandtec.com'),
-			('Vinicius Tomazin', 'Rua Itaqua', 'vinicius@bandtec.com'),
-            ('Janaina Lins', 'Rua Ibitira', 'janaina@bandtec.com'),
-            ('Jonas Florêncio', 'Rua São Miguel', 'jonas@bandtec.com'),
-            ('Karen Aleida', 'Rua Ana flora', 'Karen@bandtec.com');
             
 Insert into Carros_galeria (Modelo, Cavalaria, Ano, Descricao)
 	values	('Fiat Marea weekend', '300', '1999', 'Forjada, intercooler e turbina .50'),
@@ -74,10 +67,9 @@ Insert into Compra_anuncio (Validade, Observacao)
             ('2021-05-30', 'Comprado via pix');
 
 Insert into Anuncios (Modelo, Ano, Preco, FkIdUsuario, FkIdFicha_anuncio)
-	values 	('Fiat Marea turbo', '2006', '35000', 100, 10),
+	values 	('Fiat Marea 2.4', '2003', '18900', 100, 10),
 			('Fiat Marea 2.4', '2003', '15000', 101, 11),
-            ('Fiat Marea 2.0', '1999', '13000', 102, 12),
-            ('Fiat Marea 1.6', '1999', '10000', 103, 13);
+            ('Fiat Marea 2.0', '1999', '13000', 102, 12);
             
 Select SUM(Anuncios.Preco), AVG(Anuncios.Ano) from Usuario join Anuncios order by Preco desc;
 
@@ -89,4 +81,3 @@ JOIN Usuario on Usuario.IdUsuario = Usuarios_e_galeria.IdUsuario_galeria
 Join Carros_galeria on Usuarios_e_galeria.IdCarro_galeria = Carros_galeria.IdCarro_galeria;
 
 select Usuario.Nome, Usuario.Modelo;
-Drop table Usuario;
